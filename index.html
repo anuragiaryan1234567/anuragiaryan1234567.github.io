@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone | Play Awesome Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Outfit:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon">🕹️</span> GAMING<span class="text-glow">ZONE</span>
+        </div>
+        <nav class="main-nav">
+            <a href="#hero">Home</a>
+            <a href="#sports">Sports</a>
+            <a href="#adventure">Adventure</a>
+            <a href="#racing">Racing</a>
+            <a href="#fighting">Fighting</a>
+            <a href="#rpg">RPG</a>
+            <a href="#strategy">Strategy</a>
+            <a href="#puzzle">Puzzle</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to the Ultimate <br><span class="text-glow">Gaming Experience</span></h1>
+                <p>Scroll down to explore our exclusive collection of beautifully crafted HTML5 games. Each game features its own unique specifications and theme.</p>
+                <a href="#sports" class="cta-button">Explore Games ↓</a>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <!-- Game 1: Sports -->
+        <section id="sports" class="game-section theme-neon" data-game="sports">
+            <div class="section-container">
+                <div class="game-info">
+                    <span class="game-category">Sports / Arcade</span>
+                    <h2>Neon Ping Pong</h2>
+                    <p class="game-desc">Experience classic retro ping pong recreated with a premium neon cyber-aesthetic. Go head to head against an automated AI. First one to miss the fast-paced volleys gives up a point. Can you beat the machine?</p>
+                    
+                    <div class="specs-box">
+                        <div class="spec"><strong>Genre:</strong> Arcade Sports</div>
+                        <div class="spec"><strong>Controls:</strong> W, S (P1 Movement)</div>
+                        <div class="spec"><strong>Difficulty:</strong> Easy</div>
+                        <div class="spec"><strong>Developer:</strong> Aryan</div>
+                    </div>
+
+                    <button class="play-btn" onclick="app.launchGame('sports')">▶ PLAY NOW</button>
+                </div>
+                
+                <div class="game-visual" id="visual-sports">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800&auto=format&fit=crop" alt="Neon Ping Pong Thumbnail" class="game-thumbnail">
+                    <!-- Canvas injects here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Game 2: Adventure -->
+        <section id="adventure" class="game-section theme-dungeon reversed" data-game="adventure">
+            <div class="section-container">
+                <div class="game-info">
+                    <span class="game-category">Adventure / Maze</span>
+                    <h2>Dungeon Coin Collector</h2>
+                    <p class="game-desc">Traverse through a procedurally generated dungeon maze where treasure awaits! Dodge the wandering cube monsters and collect the golden coins to increase your score. One hit, and you respawn.</p>
+                    
+                    <div class="specs-box">
+                        <div class="spec"><strong>Genre:</strong> Top-Down Dungeon</div>
+                        <div class="spec"><strong>Controls:</strong> Arrow Keys / WASD</div>
+                        <div class="spec"><strong>Difficulty:</strong> Medium</div>
+                        <div class="spec"><strong>Developer:</strong> Aryan</div>
+                    </div>
+
+                    <button class="play-btn" onclick="app.launchGame('adventure')">▶ PLAY NOW</button>
+                </div>
+                
+                <div class="game-visual" id="visual-adventure">
+                    <img src="https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?q=80&w=800&auto=format&fit=crop" alt="Dungeon Coin Collector Thumbnail" class="game-thumbnail">
+                    <!-- Canvas injects here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Game 3: Racing -->
+        <section id="racing" class="game-section theme-racing" data-game="racing">
+            <div class="section-container">
+                <div class="game-info">
+                    <span class="game-category">High Speed Racing</span>
+                    <h2>Highway Dodge</h2>
+                    <p class="game-desc">Put your reflexes to the ultimate test. You are driving down an endless nocturnal highway. Oncoming traffic spawns continuously, and the speed multiplier increases drastically over time.</p>
+                    
+                    <div class="specs-box">
+                        <div class="spec"><strong>Genre:</strong> Endless Runner</div>
+                        <div class="spec"><strong>Controls:</strong> Left, Right Arrows</div>
+                        <div class="spec"><strong>Difficulty:</strong> Hard</div>
+                        <div class="spec"><strong>Developer:</strong> Aryan</div>
+                    </div>
+
+                    <button class="play-btn" onclick="app.launchGame('racing')">▶ PLAY NOW</button>
+                </div>
+                
+                <div class="game-visual" id="visual-racing">
+                    <img src="https://images.unsplash.com/photo-1511516171890-281b3bcfce9f?q=80&w=800&auto=format&fit=crop" alt="Highway Dodge Thumbnail" class="game-thumbnail">
+                    <!-- Canvas injects here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Game 4: Fighting -->
+        <section id="fighting" class="game-section theme-brawl reversed" data-game="fighting">
+            <div class="section-container">
+                <div class="game-info">
+                    <span class="game-category">Combat / 1v1</span>
+                    <h2>Arena Brawl</h2>
+                    <p class="game-desc">It is a duel to the finish. Face off against an aggressive AI combatant. Manage distance, strike with precise timing, and whittle their health bar down to zero before they do the same to you.</p>
+                    
+                    <div class="specs-box">
+                        <div class="spec"><strong>Genre:</strong> 1v1 Arena Fighter</div>
+                        <div class="spec"><strong>Controls:</strong> A, D (Move), SPACE (Attack)</div>
+                        <div class="spec"><strong>Difficulty:</strong> Hard</div>
+                        <div class="spec"><strong>Developer:</strong> Aryan</div>
+                    </div>
+
+                    <button class="play-btn" onclick="app.launchGame('fighting')">▶ PLAY NOW</button>
+                </div>
+                
+                <div class="game-visual" id="visual-fighting">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=800&auto=format&fit=crop" alt="Arena Brawl Thumbnail" class="game-thumbnail">
+                    <!-- Canvas injects here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Game 5: RPG -->
+        <section id="rpg" class="game-section theme-cyber" data-game="rpg">
+            <div class="section-container">
+                <div class="game-info">
+                    <span class="game-category">RPG / Cyberpunk</span>
+                    <h2>Cybernetic Soul</h2>
+                    <p class="game-desc">A deep narrative-driven RPG set in a dystopian future. You can't play this here, but check out the stunning world-building and character progression details.</p>
+                    
+                    <div class="specs-box">
+                        <div class="spec"><strong>Genre:</strong> Action RPG</div>
+                        <div class="spec"><strong>Status:</strong> Coming Soon</div>
+                        <div class="spec"><strong>Platform:</strong> PC, Console</div>
+                        <div class="spec"><strong>Developer:</strong> Nexus Studios</div>
+                    </div>
+
+                    <button class="details-btn" onclick="app.showGameDetails('rpg')">✨ VIEW DETAILS</button>
+                </div>
+                
+                <div class="game-visual">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop" alt="Cybernetic Soul Thumbnail" class="game-thumbnail">
+                </div>
+            </div>
+        </section>
+
+        <!-- Game 6: Strategy -->
+        <section id="strategy" class="game-section theme-space reversed" data-game="strategy">
+            <div class="section-container">
+                <div class="game-info">
+                    <span class="game-category">Strategy / Sci-Fi</span>
+                    <h2>Stellar Command</h2>
+                    <p class="game-desc">Command entire fleets across the galaxy in this grand strategy epic. Resource management, diplomacy, and tactical real-time fleet battles await.</p>
+                    
+                    <div class="specs-box">
+                        <div class="spec"><strong>Genre:</strong> Grand Strategy</div>
+                        <div class="spec"><strong>Status:</strong> In Development</div>
+                        <div class="spec"><strong>Platform:</strong> PC Exclusive</div>
+                        <div class="spec"><strong>Developer:</strong> Void Interactive</div>
+                    </div>
+
+                    <button class="details-btn" onclick="app.showGameDetails('strategy')">✨ VIEW DETAILS</button>
+                </div>
+                
+                <div class="game-visual">
+                    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=800&auto=format&fit=crop" alt="Stellar Command Thumbnail" class="game-thumbnail">
+                </div>
+            </div>
+        </section>
+
+        <!-- Game 7: Puzzle -->
+        <section id="puzzle" class="game-section theme-fantasy" data-game="puzzle">
+            <div class="section-container">
+                <div class="game-info">
+                    <span class="game-category">Puzzle / Mystery</span>
+                    <h2>Quantum Enigma</h2>
+                    <p class="game-desc">Bend reality and solve mind-melting puzzles in a gorgeous, surreal environment inspired by M.C. Escher and modern quantum physics.</p>
+                    
+                    <div class="specs-box">
+                        <div class="spec"><strong>Genre:</strong> First-Person Puzzle</div>
+                        <div class="spec"><strong>Status:</strong> Wishlist Now</div>
+                        <div class="spec"><strong>Platform:</strong> PS5, PC, VR</div>
+                        <div class="spec"><strong>Developer:</strong> Brainchild Games</div>
+                    </div>
+
+                    <button class="details-btn" onclick="app.showGameDetails('puzzle')">✨ VIEW DETAILS</button>
+                </div>
+                
+                <div class="game-visual">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop" alt="Quantum Enigma Thumbnail" class="game-thumbnail">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Game Details Modal -->
+    <div class="modal-overlay" id="gameModal" onclick="app.closeGameDetails(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="app.closeGameDetails()">×</button>
+            <div class="modal-hero" id="modalHero"></div>
+            <div class="modal-body">
+                <div class="modal-category" id="modalCategory"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-features" id="modalFeatures">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gaming Zone. Developed by Aryan.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="games/sports.js"></script>
+    <script src="games/adventure.js"></script>
+    <script src="games/racing.js"></script>
+    <script src="games/fighting.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
